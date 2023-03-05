@@ -28,4 +28,22 @@ function userPronunce (userGender) {
         } else if (weclomeMsg ==false && userPronunce(userGender) == null){ 
             alert ("We are pleased to have you "+ userName)
         }
-    
+
+
+        var q1 =prompt("Do you consider this good ? (Y/N)");
+        var q2 =prompt("Did you like the welcomingMsg? (Y/N)");
+        var q3 =prompt("Should we delete it ? (Y/N)");
+        
+        
+        var myArr = [q1, q2, q3];
+        
+        for (let i=0; i<=myArr.length-1;i++) {
+            if ( myArr[i] ==0){
+                myArr[i]="invalid";
+                alert ("invalid");
+               
+            
+                  
+            }
+         console.log(myArr[i]);
+        };
