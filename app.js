@@ -24,10 +24,15 @@ function userPronunce (userGender) {
     var welcomeMsg = confirm ("Do You Want to Skip The Welcoming Page ?");
 
         if (welcomeMsg ==false && userPronunce(userGender) !== null) {
-            alert ("We are pleased to have you " + userPronunce(userGender)+'.'+userName)
-        } else if (weclomeMsg ==false && userPronunce(userGender) == null){ 
+            console.log("first one")
+            alert ("We are pleased to have you " + userPronunce(userGender)+'.'+userName) 
+
+        } else if (welcomeMsg==false && userPronunce(userGender) == null){ 
+            console.log("second one")
             alert ("We are pleased to have you "+ userName)
+            
         }
+
 
 
         // var q1 =prompt("Do you consider this good ? (Y/N)");
